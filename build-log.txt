@@ -1,0 +1,106 @@
+
+> Configure project :
+The property 'kotlin.native.enableDependencyPropagation=false' has no effect in this and future Kotlin versions, as Kotlin/Native dependency commonization is now enabled by default. It is safe to remove the property.
+
+
+> Task :cleanJsBrowserTest UP-TO-DATE
+> Task :cleanAllTests UP-TO-DATE
+> Task :clean
+> Task :transformCommonMainDependenciesMetadata
+> Task :compileCommonMainKotlinMetadata SKIPPED
+> Task :generateProjectStructureMetadata
+> Task :metadataCommonMainClasses UP-TO-DATE
+> Task :allMetadataJar
+> Task :jsProcessResources
+> Task :jsBrowserProductionExecutableDistributeResources
+> Task :kotlinNpmCachesSetup
+> Task :jsPackageJson
+> Task :kotlinNodeJsSetup UP-TO-DATE
+> Task :kotlinRestoreYarnLock SKIPPED
+> Task :kotlinYarnSetup UP-TO-DATE
+> Task :jsTestPackageJson
+> Task :packageJsonUmbrella
+> Task :rootPackageJson
+
+> Task :kotlinNpmInstall
+warning workspace-aggregator-95d07b1d-6773-4076-8983-2b104597c4d2 > kotlin-compose-web-playground > webpack-dev-server > chokidar@2.1.8: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
+warning workspace-aggregator-95d07b1d-6773-4076-8983-2b104597c4d2 > kotlin-compose-web-playground > webpack > watchpack > watchpack-chokidar2 > chokidar@2.1.8: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
+warning workspace-aggregator-95d07b1d-6773-4076-8983-2b104597c4d2 > kotlin-compose-web-playground > webpack-dev-server > chokidar > fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+warning workspace-aggregator-95d07b1d-6773-4076-8983-2b104597c4d2 > kotlin-compose-web-playground > webpack-dev-server > url > querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+warning workspace-aggregator-95d07b1d-6773-4076-8983-2b104597c4d2 > kotlin-compose-web-playground > webpack-dev-server > webpack-log > uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+warning workspace-aggregator-95d07b1d-6773-4076-8983-2b104597c4d2 > kotlin-compose-web-playground > webpack > micromatch > snapdragon > source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+warning workspace-aggregator-95d07b1d-6773-4076-8983-2b104597c4d2 > kotlin-compose-web-playground > webpack > micromatch > snapdragon > source-map-resolve > resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+warning workspace-aggregator-95d07b1d-6773-4076-8983-2b104597c4d2 > kotlin-compose-web-playground > webpack > micromatch > snapdragon > source-map-resolve > source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+warning workspace-aggregator-95d07b1d-6773-4076-8983-2b104597c4d2 > kotlin-compose-web-playground > webpack > micromatch > snapdragon > source-map-resolve > urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+warning "workspace-aggregator-95d07b1d-6773-4076-8983-2b104597c4d2 > kotlin-compose-web-playground-test > karma-webpack@5.0.0" has incorrect peer dependency "webpack@^5.0.0".
+warning "workspace-aggregator-95d07b1d-6773-4076-8983-2b104597c4d2 > kotlin-compose-web-playground-test > css-loader@6.7.1" has incorrect peer dependency "webpack@^5.0.0".
+warning "workspace-aggregator-95d07b1d-6773-4076-8983-2b104597c4d2 > kotlin-compose-web-playground-test > style-loader@3.3.1" has incorrect peer dependency "webpack@^5.0.0".
+warning "workspace-aggregator-95d07b1d-6773-4076-8983-2b104597c4d2 > kotlin-compose-web-playground-test > sass-loader@13.0.2" has incorrect peer dependency "webpack@^5.0.0".
+warning Ignored scripts due to flag.
+
+> Task :kotlinStoreYarnLock
+> Task :jsGenerateExternalsIntegrated SKIPPED
+> Task :jsPublicPackageJson
+> Task :jsSourcesJar
+> Task :jsTestProcessResources NO-SOURCE
+> Task :compileKotlinJs
+> Task :jsMainClasses
+> Task :jsJar
+> Task :compileTestKotlinJs NO-SOURCE
+> Task :jsTestClasses UP-TO-DATE
+> Task :compileTestDevelopmentExecutableKotlinJs NO-SOURCE
+> Task :jsTestTestDevelopmentExecutableCompileSync NO-SOURCE
+> Task :jsBrowserTest SKIPPED
+> Task :jsTest
+> Task :allTests
+> Task :check
+> Task :compileProductionExecutableKotlinJs
+> Task :jsProductionExecutableValidateGeneratedByCompilerTypeScript
+> Task :jsProductionExecutableCompileSync
+
+> Task :jsBrowserProductionWebpack FAILED
+Module build failed (from /Users/user/repositories/kotlin-compose-web-playground/build/js/node_modules/style-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/Users/user/repositories/kotlin-compose-web-playground/build/js/node_modules/style-loader/dist/index.js:19:24)
+
+Module build failed (from /Users/user/repositories/kotlin-compose-web-playground/build/js/node_modules/style-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/Users/user/repositories/kotlin-compose-web-playground/build/js/node_modules/style-loader/dist/index.js:19:24)
+
+Module build failed (from /Users/user/repositories/kotlin-compose-web-playground/build/js/node_modules/style-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/Users/user/repositories/kotlin-compose-web-playground/build/js/node_modules/style-loader/dist/index.js:19:24)
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':jsBrowserProductionWebpack'.
+> Module build failed (from /Users/user/repositories/kotlin-compose-web-playground/build/js/node_modules/style-loader/dist/cjs.js):
+  TypeError: this.getOptions is not a function
+      at Object.loader (/Users/user/repositories/kotlin-compose-web-playground/build/js/node_modules/style-loader/dist/index.js:19:24)
+  
+  Module build failed (from /Users/user/repositories/kotlin-compose-web-playground/build/js/node_modules/style-loader/dist/cjs.js):
+  TypeError: this.getOptions is not a function
+      at Object.loader (/Users/user/repositories/kotlin-compose-web-playground/build/js/node_modules/style-loader/dist/index.js:19:24)
+  
+  Module build failed (from /Users/user/repositories/kotlin-compose-web-playground/build/js/node_modules/style-loader/dist/cjs.js):
+  TypeError: this.getOptions is not a function
+      at Object.loader (/Users/user/repositories/kotlin-compose-web-playground/build/js/node_modules/style-loader/dist/index.js:19:24)
+
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD FAILED in 44s
+25 actionable tasks: 22 executed, 3 up-to-date
